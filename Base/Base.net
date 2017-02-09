@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/projects/SensorNode/Base/Base.sch)
-    (date "2/9/2017 7:07:58 AM")
+    (date "2/9/2017 7:29:47 AM")
     (tool "Eeschema 4.0.5")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
