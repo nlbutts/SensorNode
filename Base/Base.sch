@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:General
+LIBS:Base-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -129,8 +130,6 @@ Text Label 4850 4200 0    60   ~ 0
 SCL
 Text Label 4850 4100 0    60   ~ 0
 SDA
-Text Label 4850 4400 0    60   ~ 0
-ANALOG2
 Text Label 4850 3600 0    60   ~ 0
 RX/MOSI
 Text Label 4850 3700 0    60   ~ 0
@@ -371,10 +370,8 @@ F 3 "" H 950 1350 50  0000 C CNN
 	1    950  1350
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5400 4400 4800 4400
 Text Label 5950 6000 0    60   ~ 0
-ANALOG2
+TEMP
 $Comp
 L tps610981 U1
 U 1 1 589C57BC
@@ -624,7 +621,7 @@ SCLK
 Text Label 4850 3200 0    60   ~ 0
 GPIO3
 Text Label 4850 3100 0    60   ~ 0
-GPIO2
+ANALOG2
 Wire Wire Line
 	6600 3100 7250 3100
 Text Label 6700 3100 0    60   ~ 0
@@ -650,11 +647,11 @@ Wire Wire Line
 Text Label 6000 1300 0    60   ~ 0
 VCC
 Text Label 6000 1400 0    60   ~ 0
-SWDIO
+GPIO1
 Text Label 6000 1500 0    60   ~ 0
-SWDCLK
+ANALOG1
 Text Label 6000 1600 0    60   ~ 0
-RX.MOSI
+TX/MISO
 $Comp
 L CONN_01X08 P3
 U 1 1 589CC3C4
@@ -684,25 +681,25 @@ Wire Wire Line
 Wire Wire Line
 	6800 1900 5850 1900
 Text Label 6000 1700 0    60   ~ 0
-TX/MISO
+RX/MOSI
 Text Label 6000 1800 0    60   ~ 0
-SS
-Text Label 6000 1900 0    60   ~ 0
 SCLK
+Text Label 6000 1900 0    60   ~ 0
+SS
 Wire Wire Line
 	8650 1900 7600 1900
 Wire Wire Line
 	8650 2000 7600 2000
 Text Label 7750 1400 0    60   ~ 0
-SDA
+SWDCLK
 Text Label 7750 1500 0    60   ~ 0
-SCL
+SWDIO
 Text Label 7750 1600 0    60   ~ 0
-ANALOG1
+SCL
 Text Label 7750 1700 0    60   ~ 0
-ANALOG2
+SDA
 Text Label 7750 1800 0    60   ~ 0
-GPIO1
+ANALOG2
 Text Label 7750 1900 0    60   ~ 0
 LED
 Text Label 7750 2000 0    60   ~ 0
@@ -816,4 +813,8 @@ Connection ~ 1700 1250
 Wire Wire Line
 	1750 1150 1700 1150
 Connection ~ 1700 1200
+Wire Wire Line
+	5400 4400 4800 4400
+Text Label 4850 4400 0    60   ~ 0
+TEMP
 $EndSCHEMATC
