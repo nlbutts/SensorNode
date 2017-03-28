@@ -1,7 +1,7 @@
 /*******************************************************************************
 * File Name: project.h
 * 
-* PSoC Creator  4.0 Update 1
+* PSoC Creator  4.0
 *
 * Description:
 * It contains references to all generated header files and should not be modified.
@@ -18,40 +18,17 @@
 #include "cydevice_trm.h"
 #include "cyfitter.h"
 #include "cydisabledsheets.h"
-#include "I2C.h"
-#include "I2C_I2C.h"
-#include "I2C_PINS.h"
-#include "I2C_I2C_PVT.h"
-#include "I2C_PVT.h"
-#include "I2C_BOOT.h"
 #include "Pin_2.h"
 #include "Pin_2_aliases.h"
 #include "Pin_1.h"
 #include "Pin_1_aliases.h"
 #include "ADC_SAR_Seq.h"
-#include "UART.h"
-#include "UART_SPI_UART.h"
-#include "UART_PINS.h"
-#include "UART_SPI_UART_PVT.h"
-#include "UART_PVT.h"
-#include "UART_BOOT.h"
-#include "I2C_SCBCLK.h"
-#include "I2C_sda.h"
-#include "I2C_sda_aliases.h"
-#include "I2C_scl.h"
-#include "I2C_scl_aliases.h"
-#include "I2C_SCB_IRQ.h"
+#include "LED.h"
+#include "LED_aliases.h"
+#include "PS_MODE.h"
+#include "PS_MODE_aliases.h"
 #include "ADC_SAR_Seq_IRQ.h"
 #include "ADC_SAR_Seq_intClock.h"
-#include "UART_SCBCLK.h"
-#include "UART_sclk_m.h"
-#include "UART_sclk_m_aliases.h"
-#include "UART_miso_m.h"
-#include "UART_miso_m_aliases.h"
-#include "UART_mosi_m.h"
-#include "UART_mosi_m_aliases.h"
-#include "UART_ss0_m.h"
-#include "UART_ss0_m_aliases.h"
 #include "core_cm0_psoc4.h"
 #include "CyFlash.h"
 #include "CyLib.h"
